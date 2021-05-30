@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "es2020",
+        "target": "es2020",
+        "jsx": "preserve",
+        "strict": true,
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "outDir": "dist",
+        "removeComments": true,
+        "preserveConstEnums": true,
+    },
+    "exclude": [
+        "node_modules",
+        "**/node_modules/*"
+    ]
+}
