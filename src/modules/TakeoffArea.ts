@@ -1,5 +1,5 @@
-import { Box } from "./util/Box.js";
-import { Vector2D } from "./util/Vector2D.js";
+import { Box } from "./util/Box";
+import { Vector2D } from "./util/Vector2D";
 
 export class TakeoffArea extends Box {
     public readonly startWidth: number;

@@ -1,4 +1,4 @@
-import { Vector2D } from "./Vector2D.js";
+import { Vector2D } from "./Vector2D";
 
 export class Box {
     public readonly center: Vector2D;

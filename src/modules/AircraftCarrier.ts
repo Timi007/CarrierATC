@@ -1,18 +1,20 @@
-import { Aircraft } from "./Aircraft.js";
-import { AircraftState } from "./AircraftState.js";
-import { DeckPosition } from "./DeckPosition.js";
-import { GameTime } from "./GameTime.js";
-import { DEBUG } from "./Global.js";
-import { Graphic } from "./Graphic.js";
-import { IDrawable } from "./IDrawable.js";
-import { IGameObject } from "./IGameObject.js";
-import { RearmPosition } from "./RearmPosition.js";
-import { Runway } from "./Runway.js";
-import { TakeoffArea } from "./TakeoffArea.js";
-import { TakeoffPosition } from "./TakeoffPosition.js";
-import { Box } from "./util/Box.js";
-import { HALF_PI } from "./util/MathUtil.js";
-import { Vector2D } from "./util/Vector2D.js";
+import { Aircraft } from "./Aircraft";
+import { AircraftState } from "./AircraftState";
+import { DeckPosition } from "./DeckPosition";
+import { GameTime } from "./GameTime";
+import { DEBUG } from "./Global";
+import { Graphic } from "./Graphic";
+import { IDrawable } from "./IDrawable";
+import { IGameObject } from "./IGameObject";
+import { RearmPosition } from "./RearmPosition";
+import { Runway } from "./Runway";
+import { TakeoffArea } from "./TakeoffArea";
+import { TakeoffPosition } from "./TakeoffPosition";
+import { Box } from "./util/Box";
+import { HALF_PI } from "./util/MathUtil";
+import { Vector2D } from "./util/Vector2D";
+
+const aircraftCarrierImage = require('../../img/aircraft_carrier.svg');
 
 interface AircraftEventhandler {
     readonly landing: EventListenerOrEventListenerObject,
@@ -41,7 +43,7 @@ export class AircraftCarrier implements IDrawable, IGameObject {
 
     public constructor(center: Vector2D) {
         this.center = center;
-        this.image = new Graphic('img/aircraft_carrier.svg');
+        this.image = new Graphic(aircraftCarrierImage.default);
 
         let xOffset = center.x - 28;
         let yTop = center.y - 88;

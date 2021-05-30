@@ -1,11 +1,11 @@
-import { GameTime } from "./GameTime.js";
-import { DEBUG } from "./Global.js";
-import { IDrawable } from "./IDrawable.js";
-import { IGameObject } from "./IGameObject.js";
-import { Opacity } from "./Opacity.js";
-import { drawLine } from "./util/DrawUtil.js";
-import { TWO_PI } from "./util/MathUtil.js";
-import { Vector2D } from "./util/Vector2D.js";
+import { GameTime } from "./GameTime";
+import { DEBUG } from "./Global";
+import { IDrawable } from "./IDrawable";
+import { IGameObject } from "./IGameObject";
+import { Opacity } from "./Opacity";
+import { drawLine } from "./util/DrawUtil";
+import { TWO_PI } from "./util/MathUtil";
+import { Vector2D } from "./util/Vector2D";
 
 export class Runway implements IDrawable, IGameObject {
     public closed: boolean = false;

@@ -1,14 +1,16 @@
-import { AircraftState } from "./AircraftState.js";
-import { FlyZone } from "./FlyZone.js";
-import { GameTime } from "./GameTime.js";
-import { DEBUG } from "./Global.js";
-import { Graphic } from "./Graphic.js";
-import { IDrawable } from "./IDrawable.js";
-import { IGameObject } from "./IGameObject.js";
+import { AircraftState } from "./AircraftState";
+import { FlyZone } from "./FlyZone";
+import { GameTime } from "./GameTime";
+import { DEBUG } from "./Global";
+import { Graphic } from "./Graphic";
+import { IDrawable } from "./IDrawable";
+import { IGameObject } from "./IGameObject";
 import { Opacity } from "./Opacity";
-import { drawLine } from "./util/DrawUtil.js";
-import { TWO_PI } from "./util/MathUtil.js";
-import { Vector2D } from "./util/Vector2D.js";
+import { drawLine } from "./util/DrawUtil";
+import { TWO_PI } from "./util/MathUtil";
+import { Vector2D } from "./util/Vector2D";
+
+const aircraftImage = require('../../img/aircraft.svg');
 
 interface AircraftConfig {
     readonly scale: {
@@ -84,7 +86,7 @@ export class Aircraft extends EventTarget implements IDrawable, IGameObject {
         turnRate: 0.002,
         catchArrestorWireDelay: 3000, // ~3 sec
         image: {
-            path: 'img/aircraft.svg',
+            path: aircraftImage.default,
             scale: 0.2,
         },
         collision: {

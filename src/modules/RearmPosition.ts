@@ -1,6 +1,6 @@
-import { Aircraft } from "./Aircraft.js";
-import { DeckPosition } from "./DeckPosition.js";
-import { Vector2D } from "./util/Vector2D.js";
+import { Aircraft } from "./Aircraft";
+import { DeckPosition } from "./DeckPosition";
+import { Vector2D } from "./util/Vector2D";
 
 export class RearmPosition extends DeckPosition {
     public readonly queue: DeckPosition[];

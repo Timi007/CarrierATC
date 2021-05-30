@@ -1,4 +1,4 @@
-import { Vector2D } from "./Vector2D.js";
+import { Vector2D } from "./Vector2D";
 
 /**
  * Draws a line from point start to end.

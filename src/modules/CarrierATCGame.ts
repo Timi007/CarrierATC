@@ -1,14 +1,14 @@
-import { Aircraft } from "./Aircraft.js";
-import { AircraftCarrier } from "./AircraftCarrier.js";
-import { AircraftState } from "./AircraftState.js";
-import { FlyZone } from "./FlyZone.js";
-import { GameState } from "./GameState.js";
-import { GameTime } from "./GameTime.js";
-import { DEBUG_CONFIRM_TAKEOFF, DEBUG_DISABLE_COLLISION, FONT_SIZES } from "./Global.js";
-import { getCanvasCenter } from "./util/canvas.js";
-import { drawLine } from "./util/DrawUtil.js";
-import { randomAngle, HALF_PI, randomInteger } from "./util/MathUtil.js";
-import { Vector2D } from "./util/Vector2D.js";
+import { Aircraft } from "./Aircraft";
+import { AircraftCarrier } from "./AircraftCarrier";
+import { AircraftState } from "./AircraftState";
+import { FlyZone } from "./FlyZone";
+import { GameState } from "./GameState";
+import { GameTime } from "./GameTime";
+import { DEBUG_CONFIRM_TAKEOFF, DEBUG_DISABLE_COLLISION, FONT_SIZES } from "./Global";
+import { getCanvasCenter } from "./util/canvas";
+import { drawLine } from "./util/DrawUtil";
+import { randomAngle, HALF_PI, randomInteger } from "./util/MathUtil";
+import { Vector2D } from "./util/Vector2D";
 
 interface GameSettings {
     readonly aircraftSpawnRate: number,

@@ -1,5 +1,5 @@
-import { randomInteger, randomNumber } from "./MathUtil.js";
-import { Vector2D } from "./Vector2D.js";
+import { randomInteger, randomNumber } from "./MathUtil";
+import { Vector2D } from "./Vector2D";
 
 export function getRandomPosition(context: CanvasRenderingContext2D, margin: number = 0): Vector2D {
     let x = randomInteger(0, context.canvas.width - margin);

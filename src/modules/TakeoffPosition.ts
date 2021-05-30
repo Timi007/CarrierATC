@@ -1,5 +1,5 @@
-import { DeckPosition } from "./DeckPosition.js";
-import { Vector2D } from "./util/Vector2D.js";
+import { DeckPosition } from "./DeckPosition";
+import { Vector2D } from "./util/Vector2D";
 
 export class TakeoffPosition extends DeckPosition {
     public readonly path: Vector2D[];

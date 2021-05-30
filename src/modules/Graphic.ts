@@ -1,4 +1,4 @@
-import { Vector2D } from "./util/Vector2D.js";
+import { Vector2D } from "./util/Vector2D";
 
 export class Graphic {
     public readonly image: CanvasImageSource;

@@ -1,5 +1,5 @@
-import { Aircraft } from "./Aircraft.js";
-import { Vector2D } from "./util/Vector2D.js";
+import { Aircraft } from "./Aircraft";
+import { Vector2D } from "./util/Vector2D";
 
 export class DeckPosition {
     public readonly position: Vector2D;

@@ -1,4 +1,4 @@
-import { Vector2D } from "./Vector2D.js";
+import { Vector2D } from "./Vector2D";
 
 /**
  * Returns the canvas context with the given id. Throws an error if canvas does not exist.
